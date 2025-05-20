@@ -30,10 +30,9 @@ A simple and intuitive web application that allows students to calculate their *
 - **CSS**
 - **JavaScript**
 
-## 📂 Project Structure
+## 📂 Project Structure CGPA-SGPA/
+├── index.html        # Main HTML file
+├── style.css         # Stylesheet
+├── script.js         # JavaScript logic
+└── README.md         # Project documentation
 
-CGPA-SGPA/
-│
-├── index.html # Main HTML page
-├── style.css # Stylesheet
-└── script.js # JavaScript logic
