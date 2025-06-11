@@ -156,9 +156,12 @@ button:hover {
   color: #39ff14;
   margin-top: 40px;
   text-shadow: 0 0 8px #39ff14;
-  padding-top: 20px;
+  padding: 20px 0;
   border-top: 1px solid rgba(57, 255, 20, 0.2);
   animation: glowFooter 2s ease-in-out infinite alternate;
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
 @keyframes glowFooter {
