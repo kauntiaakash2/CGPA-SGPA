@@ -149,26 +149,3 @@ button:hover {
     text-shadow: 0 0 15px #39ff14;
   }
 }
-
-.footer {
-  text-align: center;
-  font-size: 14px;
-  color: #39ff14;
-  margin-top: 40px;
-  text-shadow: 0 0 8px #39ff14;
-  padding: 20px 0;
-  border-top: 1px solid rgba(57, 255, 20, 0.2);
-  animation: glowFooter 2s ease-in-out infinite alternate;
-  width: 100%;
-  display: block;
-  position: relative;
-}
-
-@keyframes glowFooter {
-  from {
-    text-shadow: 0 0 5px #39ff14;
-  }
-  to {
-    text-shadow: 0 0 15px #39ff14;
-  }
-}
