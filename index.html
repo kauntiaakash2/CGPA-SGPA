@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SGPA & CGPA Calculator</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>📚 SGPA & CGPA Calculator</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SGPA & CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 SGPA & CGPA Calculator</h1>
+      <div class="kiit-tag">Powered by KIIT 🏛️</div>
 
-    <div class="card">
-      <h2>🎓 SGPA Calculator</h2>
-      <div id="subjects"></div>
-      <div class="buttons">
-        <button onclick="addSubject()">➕ Add Subject</button>
-        <button onclick="calculateSGPA()">📊 Calculate SGPA</button>
-        <button onclick="saveSemester()">💾 Save Semester</button>
+      <div class="card">
+        <h2>🎓 SGPA Calculator</h2>
+        <div id="subjects"></div>
+        <div class="buttons">
+          <button onclick="addSubject()">➕ Add Subject</button>
+          <button onclick="calculateSGPA()">📊 Calculate SGPA</button>
+          <button onclick="saveSemester()">💾 Save Semester</button>
+        </div>
+        <p id="sgpa-result" class="result"></p>
       </div>
-      <p id="sgpa-result" class="result"></p>
+
+      <div class="card">
+        <h2>📈 CGPA Calculator</h2>
+        <button onclick="calculateCGPA()">📉 Calculate CGPA</button>
+        <p id="cgpa-result" class="result"></p>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>📈 CGPA Calculator</h2>
-      <button onclick="calculateCGPA()">📉 Calculate CGPA</button>
-      <p id="cgpa-result" class="result"></p>
-    </div>
-  </div>
+    <script src="script.js"></script>
 
-  <script src="script.js"></script>
-</body>
+    <footer class="footer">
+      <p>
+        © 2025 <strong>kauntiaakash2</strong> | CodeWith11. All rights
+        reserved.
+      </p>
+    </footer>
+  </body>
 </html>
