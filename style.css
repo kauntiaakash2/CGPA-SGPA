@@ -8,8 +8,8 @@ body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(145deg, #0f0f0f, #1e1e1e);
-  color: #e0e0e0;
+  background: linear-gradient(to bottom right, #0f0f0f, #1a1a1a);
+  color: #39ff14;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -26,31 +26,31 @@ h1 {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 40px;
-  color: #00f7ff;
-  text-shadow: 0 0 15px rgba(0, 247, 255, 0.7);
+  color: #39ff14;
+  text-shadow: 0 0 12px #39ff14;
 }
 
 .card {
-  background: rgba(20, 20, 20, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 18px;
+  background: rgba(20, 20, 20, 0.4);
+  border: 1px solid rgba(57, 255, 20, 0.2);
+  border-radius: 20px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0 10px 30px rgba(0, 255, 247, 0.1);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 30px rgba(57, 255, 20, 0.1);
   transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-  box-shadow: 0 15px 40px rgba(0, 255, 247, 0.2);
-  transform: translateY(-4px);
+  box-shadow: 0 0 40px rgba(57, 255, 20, 0.3);
+  transform: translateY(-2px);
 }
 
 h2 {
   text-align: center;
-  color: #00fff7;
+  color: #39ff14;
   margin-bottom: 20px;
-  text-shadow: 0 0 8px #00fff7;
+  text-shadow: 0 0 10px #39ff14;
 }
 
 .subject-row {
@@ -59,23 +59,30 @@ h2 {
   gap: 15px;
   margin-bottom: 15px;
   justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .subject-row input {
-  padding: 10px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #39ff14;
+  border-radius: 10px;
   width: 160px;
-  background: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
+  background: rgba(30, 30, 30, 0.5);
+  color: #39ff14;
   font-size: 14px;
   outline: none;
   transition: 0.3s ease;
 }
 
+.subject-row input::placeholder {
+  color: #7fff7f;
+  opacity: 0.5;
+}
+
 .subject-row input:focus {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: #00fff7;
+  background: rgba(50, 50, 50, 0.7);
+  border-color: #39ff14;
+  box-shadow: 0 0 12px #39ff14;
 }
 
 .buttons {
@@ -84,23 +91,23 @@ h2 {
 }
 
 button {
-  margin: 10px;
+  margin: 8px;
   padding: 12px 25px;
-  background: linear-gradient(to right, #00fff7, #00aaff);
-  color: #111;
+  background-color: #39ff14;
+  color: #0a0a0a;
   font-weight: bold;
   border: none;
-  border-radius: 14px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 16px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 255, 247, 0.4);
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
 }
 
 button:hover {
-  background: linear-gradient(to right, #00e6db, #0099dd);
+  background-color: #2aff00;
   transform: translateY(-2px);
-  box-shadow: 0 6px 25px rgba(0, 255, 247, 0.5);
+  box-shadow: 0 0 25px rgba(57, 255, 20, 0.5);
 }
 
 .result {
@@ -108,6 +115,17 @@ button:hover {
   margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
-  color: #00ffbf;
-  text-shadow: 0 0 10px rgba(0, 255, 191, 0.6);
+  color: #39ff14;
+  text-shadow: 0 0 8px #39ff14;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
