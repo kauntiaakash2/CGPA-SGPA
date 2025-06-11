@@ -8,8 +8,8 @@ body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle at top left, #1f1c2c, #928dab);
-  color: #ffffff;
+  background: linear-gradient(145deg, #0f0f0f, #1e1e1e);
+  color: #e0e0e0;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -27,23 +27,30 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 40px;
   color: #00f7ff;
-  text-shadow: 0 0 10px #00f7ff;
+  text-shadow: 0 0 15px rgba(0, 247, 255, 0.7);
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 255, 247, 0.1);
+  backdrop-filter: blur(14px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 15px 40px rgba(0, 255, 247, 0.2);
+  transform: translateY(-4px);
 }
 
 h2 {
   text-align: center;
-  color: #00ffea;
+  color: #00fff7;
   margin-bottom: 20px;
+  text-shadow: 0 0 8px #00fff7;
 }
 
 .subject-row {
@@ -55,19 +62,20 @@ h2 {
 }
 
 .subject-row input {
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
   width: 160px;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
   font-size: 14px;
   outline: none;
   transition: 0.3s ease;
 }
 
 .subject-row input:focus {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #00fff7;
 }
 
 .buttons {
@@ -76,29 +84,30 @@ h2 {
 }
 
 button {
-  margin: 8px;
+  margin: 10px;
   padding: 12px 25px;
-  background-color: #00fff7;
+  background: linear-gradient(to right, #00fff7, #00aaff);
   color: #111;
   font-weight: bold;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
   cursor: pointer;
   font-size: 16px;
-  transition: 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,255,247,0.4);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 255, 247, 0.4);
 }
 
 button:hover {
-  background-color: #00e6db;
+  background: linear-gradient(to right, #00e6db, #0099dd);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,255,247,0.5);
+  box-shadow: 0 6px 25px rgba(0, 255, 247, 0.5);
 }
 
 .result {
   text-align: center;
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #00ffbf;
+  text-shadow: 0 0 10px rgba(0, 255, 191, 0.6);
 }
