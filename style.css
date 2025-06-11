@@ -129,3 +129,43 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+.kiit-tag {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #39ff14;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #39ff14;
+  letter-spacing: 1px;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #39ff14;
+  }
+  to {
+    text-shadow: 0 0 15px #39ff14;
+  }
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #39ff14;
+  margin-top: 40px;
+  text-shadow: 0 0 8px #39ff14;
+  padding-top: 20px;
+  border-top: 1px solid rgba(57, 255, 20, 0.2);
+  animation: glowFooter 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowFooter {
+  from {
+    text-shadow: 0 0 5px #39ff14;
+  }
+  to {
+    text-shadow: 0 0 15px #39ff14;
+  }
+}
